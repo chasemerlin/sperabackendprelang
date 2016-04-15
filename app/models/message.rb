@@ -4,4 +4,5 @@ class Message < ActiveRecord::Base
   belongs_to :friendship
   belongs_to :resource_page
   belongs_to :resource_page
+  acts_as_votable 
 end
