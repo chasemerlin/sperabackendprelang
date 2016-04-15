@@ -1,5 +1,5 @@
 class ResourcePagesController < ApplicationController
-  before_action :set_resource_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_resource_page, only: [:show, :edit, :update, :destroy, :vote]
 
   # GET /resource_pages
   # GET /resource_pages.json
