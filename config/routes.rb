@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :checkins
+
   resources :goals
 
   resources :user_goals do
