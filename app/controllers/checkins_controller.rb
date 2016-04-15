@@ -1,5 +1,5 @@
 class CheckinsController < ApplicationController
-  before_action :set_checkin, only: [:show, :edit, :update, :destroy]
+  before_action :set_checkin, only: [:show, :edit, :update, :destroy, :vote]
 
   # GET /checkins
   # GET /checkins.json
