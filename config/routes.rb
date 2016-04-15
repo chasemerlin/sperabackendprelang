@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :friendships
+
   resources :groups
 
   resources :group_memberships
