@@ -1,0 +1,73 @@
+<%= form_for(@user_goal) do |f| %>
+  <% if @user_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_goal.errors.count, "error") %> prohibited this user_goal from being saved:</h2>
+
+      <ul>
+      <% @user_goal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :goal_id %><br>
+    <%= f.text_field :goal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :due_date_time %><br>
+    <%= f.datetime_select :due_date_time %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :points %><br>
+    <%= f.number_field :points %>
+  </div>
+  <div class="field">
+    <%= f.label :recurring_type %><br>
+    <%= f.text_field :recurring_type %>
+  </div>
+  <div class="field">
+    <%= f.label :group_id %><br>
+    <%= f.text_field :group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :friendship_id %><br>
+    <%= f.text_field :friendship_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_private %><br>
+    <%= f.check_box :is_private %>
+  </div>
+  <div class="field">
+    <%= f.label :completed_status %><br>
+    <%= f.text_field :completed_status %>
+  </div>
+  <div class="field">
+    <%= f.label :times_completed %><br>
+    <%= f.number_field :times_completed %>
+  </div>
+  <div class="field">
+    <%= f.label :reminder_time %><br>
+    <%= f.time_select :reminder_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

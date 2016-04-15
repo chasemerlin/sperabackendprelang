@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @user_goal.goal %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @user_goal.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @user_goal.description %>
+</p>
+
+<p>
+  <strong>Due date time:</strong>
+  <%= @user_goal.due_date_time %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_goal.user %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @user_goal.category %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @user_goal.points %>
+</p>
+
+<p>
+  <strong>Recurring type:</strong>
+  <%= @user_goal.recurring_type %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @user_goal.group %>
+</p>
+
+<p>
+  <strong>Friendship:</strong>
+  <%= @user_goal.friendship %>
+</p>
+
+<p>
+  <strong>Is private:</strong>
+  <%= @user_goal.is_private %>
+</p>
+
+<p>
+  <strong>Completed status:</strong>
+  <%= @user_goal.completed_status %>
+</p>
+
+<p>
+  <strong>Times completed:</strong>
+  <%= @user_goal.times_completed %>
+</p>
+
+<p>
+  <strong>Reminder time:</strong>
+  <%= @user_goal.reminder_time %>
+</p>
+
+<%= link_to 'Edit', edit_user_goal_path(@user_goal) %> |
+<%= link_to 'Back', user_goals_path %>

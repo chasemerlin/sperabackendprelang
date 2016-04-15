@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_goals
+
   resources :resource_pages do
   #->Prelang (voting/acts_as_votable)
   member do

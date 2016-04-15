@@ -1,0 +1,51 @@
+<h1>Listing user_goals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Goal</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Due date time</th>
+      <th>User</th>
+      <th>Category</th>
+      <th>Points</th>
+      <th>Recurring type</th>
+      <th>Group</th>
+      <th>Friendship</th>
+      <th>Is private</th>
+      <th>Completed status</th>
+      <th>Times completed</th>
+      <th>Reminder time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_goals.each do |user_goal| %>
+      <tr>
+        <td><%= user_goal.goal %></td>
+        <td><%= user_goal.title %></td>
+        <td><%= user_goal.description %></td>
+        <td><%= user_goal.due_date_time %></td>
+        <td><%= user_goal.user %></td>
+        <td><%= user_goal.category %></td>
+        <td><%= user_goal.points %></td>
+        <td><%= user_goal.recurring_type %></td>
+        <td><%= user_goal.group %></td>
+        <td><%= user_goal.friendship %></td>
+        <td><%= user_goal.is_private %></td>
+        <td><%= user_goal.completed_status %></td>
+        <td><%= user_goal.times_completed %></td>
+        <td><%= user_goal.reminder_time %></td>
+        <td><%= link_to 'Show', user_goal %></td>
+        <td><%= link_to 'Edit', edit_user_goal_path(user_goal) %></td>
+        <td><%= link_to 'Destroy', user_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User goal', new_user_goal_path %>
