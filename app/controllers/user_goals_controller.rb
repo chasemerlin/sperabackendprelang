@@ -1,5 +1,5 @@
 class UserGoalsController < ApplicationController
-  before_action :set_user_goal, only: [:show, :edit, :update, :destroy]
+  before_action :set_user_goal, only: [:show, :edit, :update, :destroy, :vote]
 
   # GET /user_goals
   # GET /user_goals.json
