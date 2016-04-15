@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mood: 1
+  is_sober: false
+  needs_help: false
+  content: MyText
+  user_id: 
+  is_private: false
+
+two:
+  mood: 1
+  is_sober: false
+  needs_help: false
+  content: MyText
+  user_id: 
+  is_private: false
