@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  user_id: 
+  group_id: 
+  user_recipient_id: 1
+  friendship_id: 
+  resource_page_id: 
+  resource_page_id: 
+
+two:
+  content: MyText
+  user_id: 
+  group_id: 
+  user_recipient_id: 1
+  friendship_id: 
+  resource_page_id: 
+  resource_page_id: 
