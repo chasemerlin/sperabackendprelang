@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @resource_page.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @resource_page.description %>
+</p>
+
+<%= link_to 'Edit', edit_resource_page_path(@resource_page) %> |
+<%= link_to 'Back', resource_pages_path %>
